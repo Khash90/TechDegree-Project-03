@@ -1,35 +1,87 @@
 *{
     box-sizing: border-box;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 /*-----------------------------------------------
    Base Elements Styles
    -----------------------------------------------*/
-body{
-    text-align: center;
-}
+
 h1{
     padding: 10px;
-    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
-form{
-    width: 90%;
-    margin:0 auto;
-    text-align: left;
-}
-form h1{
-    padding-left: 0;
-    margin-left: 0;
-}
 fieldset{
     border: none;
 }
-
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select{
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: 4rem;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  }
+  legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  label.light {
+    font-weight: 300;
+    display: inline;
+  }
+  
+  button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #1f1b62;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #3ac162;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+  }
+  textarea{
+      overflow: auto;
+      height: 8rem;
+  }
    /*-----------------------------------------------
    Base Layout Styles
 -----------------------------------------------*/
+.main-nav,
+.top-header{
+    text-align: center;
+}
 .main-nav h1{
     width: 100%;
     margin: 0%;
@@ -47,19 +99,59 @@ fieldset{
     letter-spacing: 0;
 }
 .signup-h{
+    text-align:center;
     padding-bottom: 2px;
     margin-bottom: -15px;
 }
 .header-p{
     padding-top: 0;
     font-size: 25px;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    text-align-last:center;
 }
 .main-form{
     border-top: 3px solid black;
     margin: 5px auto;
     width: 90%;
 }
+.main-form ,form {
+    width: 100%;
+    margin: 35px auto;
+    /* background: lightblue; */
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    
+  }
+  .number {
+    background-color: #4a1e6c;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+  }
+
+/* legend{
+      border-top: 2px solid black;
+      width: 90%;
+  } */
+  .border-top{
+      border-top: 2px solid black;
+      width: 90%;
+      padding-top: 3px;
+      margin: 7px auto;
+  }
+  .top-legend{
+      margin-bottom: 25px;
+  }
+  .top-field ,label{
+     margin-bottom:18px ; 
+  }
 /*-----------------------------------------------
    Media Queries
 -----------------------------------------------*/

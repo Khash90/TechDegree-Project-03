@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Online Registration Form</title>
@@ -20,15 +20,15 @@
     <div class="header-box">
         <header class="main-header">
         <h1 class="signup-h"><strong> Singup for our newsletter</strong></h1>
-        <p class="header-p">Get the latst news on how your code is doing right in your inbox</p>
+        <p class="header-p">Get the latest news on how your code is doing right in your inbox</p>
        </header>
     </div>
 
-
-   <div class="main-form" method="POST">
-     <form action="index.html" >
-         <fieldset>
-            <legend><span class="number">1</span>Contact Information</legend>
+    <div class="border-top"></div>
+   <!-- <div class="main-form" > -->
+     <form  action="index.html" method="POST">
+         <fieldset class="top-field">
+            <legend class="top-legend"><span class="number">1</span>Contact Information</legend>
 
             <label for="full-name">Full Name</label>
             <input type="text" id="full-name" name="user_fullname">
@@ -68,26 +68,27 @@
             <input type="text" id="zipcode" name="user_zipcode">
          </fieldset>
 
-         <fieldset>
+         <fieldset class="form-pt2">
 
              <legend><span class="number">2</span>Newsletter</legend>
 
              <label>Select the newsletters you would like to receive</label>
 
              <input type="checkbox" id="html-news" value="user-html-receive" name="user-interests">
-             <label for="html-news">Html News</label>
+             <label class="light" for="html-news">Html News</label><br>
              <input type="checkbox" id="css-news" value="user-css-receive" name="user-interests">
-             <label for="css-news">CSS News</label>
+             <label class="light" for="css-news">CSS News</label><br>
              <input type="checkbox" id="javascript-news" value="user-javascript-receive" name="user-interests">
-             <label for="javascript-news">JavaScript News</label>
+             <label class="light" for="javascript-news">JavaScript News</label>
 
 
              <label>Newsletter format</label>
              <input type="radio" id="newsletter-html" name="newsletter-format" value="newsletter-html">
-             <label for="newsletter">HTML</label>
+             <label class="light" for="newsletter">HTML</label><br>
              <input type="radio" id="newsletter-plaintext" name="newsletter-format" value="newsletter-plaintext">
-             <label for="newsletter-plaintext">Plain text</label>
+             <label  class="light" for="newsletter-plaintext">Plain text</label>
 
+             <label for="other-topics">Other topics you'd like to hear about</label>
              <textarea name="" id="other-topics" name="user-topics"  rows="10"></textarea>
          </fieldset>
          <button>Sign Up</button>
@@ -95,7 +96,7 @@
              <p>Copyright The Code Review</p>
          </footer>
      </form>
-   </div>
+   <!-- </div> -->
 
 
     
