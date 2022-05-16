@@ -23,16 +23,82 @@
         <p class="header-p">Get the latst news on how your code is doing right in your inbox</p>
        </header>
     </div>
-   <div class="main-form">
-    <form action="">
-      asdsdasdadsa
-    </form>
+
+
+   <div class="main-form" method="POST">
+     <form action="index.html" >
+         <fieldset>
+            <legend><span class="number">1</span>Contact Information</legend>
+
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="user_fullname">
+
+            <label for="mail">Email Address</label>
+            <input type="email" id="mail" name="user_email">
+
+            <label for="telephone">Phone Number</label>
+            <input type="tel" id="telephone" name="user_tel">
+
+            <label for="street-address">Street Address</label>
+            <input type="text" id="street-address" name="user_address">
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="user_city">
+
+            <label for="state">State</label>
+            <select  id="state" name="user_state">
+                <option value="arizona">Arizona</option>
+                <option value="alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value="california">California</option>
+                <option value="colorado">Colorado</option>
+                <option value="delware">Delware</option>
+                <option value="florida">Florida</option>
+                <option value="georgia">Georgia</option>
+                <option value="hawaii">Hawaii</option>
+                <option value="montana">Montana</option>
+                <option value="mississippi">Mississippi</option>
+                <option value="new jersey">New Jersey</option>
+                <option value="new york">New York</option>
+                <option value="ohio">Ohio</option>
+                <option value="texas">Texas</option>
+            </select>
+
+            <label for="zipcode">Zip Code</label>
+            <input type="text" id="zipcode" name="user_zipcode">
+         </fieldset>
+
+         <fieldset>
+
+             <legend><span class="number">2</span>Newsletter</legend>
+
+             <label>Select the newsletters you would like to receive</label>
+
+             <input type="checkbox" id="html-news" value="user-html-receive" name="user-interests">
+             <label for="html-news">Html News</label>
+             <input type="checkbox" id="css-news" value="user-css-receive" name="user-interests">
+             <label for="css-news">CSS News</label>
+             <input type="checkbox" id="javascript-news" value="user-javascript-receive" name="user-interests">
+             <label for="javascript-news">JavaScript News</label>
+
+
+             <label>Newsletter format</label>
+             <input type="radio" id="newsletter-html" name="newsletter-format" value="newsletter-html">
+             <label for="newsletter">HTML</label>
+             <input type="radio" id="newsletter-plaintext" name="newsletter-format" value="newsletter-plaintext">
+             <label for="newsletter-plaintext">Plain text</label>
+
+             <textarea name="" id="other-topics" name="user-topics"  rows="10"></textarea>
+         </fieldset>
+         <button>Sign Up</button>
+         <footer>
+             <p>Copyright The Code Review</p>
+         </footer>
+     </form>
    </div>
-    <footer>
-        <nav>
-            <p>copyright the code review</p>
-        </nav>
-    </footer>
+
+
+    
     
 </body>
 </html>
