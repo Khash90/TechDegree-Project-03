@@ -46,7 +46,7 @@
             <input type="text" id="city" name="user_city" placeholder="required" required>
 
             <label for="state">State</label>
-            <select  id="state" name="user_state" required>
+            <select  id="state" name="user_state">
                 <option value="arizona">Arizona</option>
                 <option value="alabama">Alabama</option>
                 <option value="Alaska">Alaska</option>
@@ -68,7 +68,7 @@
             <input class="zipcode" type="text" id="zipcode" name="user_zipcode" placeholder="required" required >
          </fieldset>
 
-         <fieldset class="form-pt2">
+         <fieldset class="bot-field">
 
              <legend class="bot-legend"><span class="number">2</span>Newsletter</legend>
 
@@ -86,14 +86,14 @@
 
              <label>Newsletter format</label>
              <input type="radio" id="newsletter-html" name="newsletter-format" value="newsletter-html" required>
-             <label class="light" for="newsletter">HTML</label><br>
+             <label class="light" for="newsletter-html">HTML</label><br>
 
              <input type="radio" id="newsletter-plaintext" name="newsletter-format" value="newsletter-plaintext" required>
              <label  class="light" for="newsletter-plaintext" >Plain text</label>
 
              <label class="last-label" for="other-topics">Other topics you'd like to hear about</label>
 
-             <textarea class="textarea" name="" id="other-topics" name="user-topics"  rows="10" placeholder="Other topics..." required></textarea>
+             <textarea class="textarea" id="other-topics" name="user-topics"  rows="10" placeholder="Other topics..." required></textarea>
 
              <button class="submit-btn">Sign Up</button>
 

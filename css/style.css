@@ -7,7 +7,7 @@
    Base Elements Styles
    -----------------------------------------------*/
 
-h1{
+.top-header{
     padding: 10px;
     font-family: 'Roboto', sans-serif;
     
@@ -29,8 +29,8 @@ select{
     outline: 0;
     padding: 15px;
     width: 100%;
-    background-color: #e8eeef;
-    color: #000000;
+    background-color: #042024;
+    color: #dbe3ef;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 30px;
     border-radius: 5px;
@@ -54,6 +54,7 @@ select {
   legend {
     font-size: 1.4em;
     margin-bottom: 10px;
+    
   }
   label {
     display: block;
@@ -68,6 +69,7 @@ select {
     font-size: 16px;
     text-align: right;
     font-family: 'Noto Serif', serif;
+    color: white;
  }
  textarea::placeholder{
     font-size: 16px;
@@ -80,16 +82,15 @@ select {
       height: 8rem;
   }
   
-  textarea ,input:focus{
+  input:focus{
       background:  rgb(117, 117, 167);
       border: 3px solid #1d0c2a;
       color: white;
       font-family: 'Oswald', sans-serif;
       transition: all 0.5s ease 0s;
   }
-  .textarea textarea:focus{
+  textarea:focus{
     background:  rgb(117, 117, 167);
-    
     color: white;
     font-family: 'Oswald', sans-serif;
     transition: all 0.5s ease 0s;
@@ -148,7 +149,9 @@ select {
     font-size: 21px;
     
   }
-
+  .top-field ,.top-legend{
+      background-color: #8896a8;
+  }
   .top-field ,label{
     margin-bottom:18px ; 
   }
@@ -213,4 +216,37 @@ select {
    Media Queries
 -----------------------------------------------*/
 
- 
+ @media (min-width:768px){
+     div,form{
+         max-width:50%;
+     }
+     .header-box{
+         max-width: 50%;
+     }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select{
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 20px;
+    height: 4rem;
+    margin-right: 0;
+    /* outline: 0; */
+    /* padding:0 */
+    width: 65%;
+    background-color: #042024;
+    color: #dbe3ef;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+    form .top-field{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+ }
