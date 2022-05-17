@@ -244,9 +244,18 @@ select {
 
     form .top-field{
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
-        align-content: center;
-        align-items: center;
+        flex-flow: column wrap;
     }
+    form div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between ;
+        
+    }
+    form div{
+        max-width: 100%;
+    }
+ 
  }
