@@ -174,21 +174,27 @@ select {
  }
 
   .border-top{
-      border-top: 2px solid black;
+      border-top: 3px solid black;
       width: 90%;
       padding-top: 3px;
       margin: 7px auto;
+  }
+  .border-bot{
+    border-top: 3px solid black;
+    width: 90%;
+    padding-top: 3px;
+    margin: 7px auto;
   }
   .top-legend{
       margin-bottom: 25px;
   }
  
- .bot-legend{
-     border-top: 2px solid black;
+ /* .bot-legend{
+     border-top: 3px solid black;
      width: 100%;
      padding-top: 40px;
      padding-bottom: 30px;
- }
+ } */
   .last-label{
       margin: 33px 0;
   }
@@ -217,8 +223,14 @@ select {
 -----------------------------------------------*/
 
  @media (min-width:768px){
-     div,form{
+     form{
          max-width:50%;
+     }
+     .border-top{
+         width: 50%;
+     }
+     .border-bot{
+         width: 100%;
      }
      .header-box{
          max-width: 50%;
@@ -232,14 +244,16 @@ select {
     font-size: 20px;
     height: 4rem;
     margin-right: 0;
-    /* outline: 0; */
-    /* padding:0 */
     width: 65%;
     background-color: #042024;
     color: #dbe3ef;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 30px;
     border-radius: 5px;
+}
+.zipcode{
+    max-width: 35%;
+    padding-left: 30px;
 }
 
     form .top-field{
@@ -257,5 +271,19 @@ select {
     form div{
         max-width: 100%;
     }
+    .zipcode-container{
+        width: 65%;
+    }
+    /* .label-container{
+        width: 20%;
+    } */
+     
+  input:focus{
+    background:  rgb(117, 117, 167);
+    border: 3px solid #1d0c2a;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    transition: all 0.5s ease 0s;
+  }
  
  }
