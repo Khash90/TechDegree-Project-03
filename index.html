@@ -13,13 +13,13 @@
 </head>
 <body>
 
-    <nav class="main-nav">
-        <h1 class="top-header">the Code Review <strong></strong> </h1>
-    </nav>
+    <header class="main-header">
+        <h1 class="top-header"><strong>the Code Review </strong> </h1>
+    </header>
 
     <div class="header-box">
         <header class="main-header">
-        <h1 class="signup-h"><strong> Singup for our newsletter</strong></h1>
+        <h2 id="signup-h"><strong> Singup for our newsletter</strong></h2>
         <p class="header-p">Get the latest news on how your code is doing right in your inbox</p>
        </header>
     </div>
@@ -79,11 +79,9 @@
 
             <div >
             <label for="zipcode">Zip Code</label>
-                
-                <!-- <div class="zipcode-container"> -->
-            <input id="zipcode" type="text" id="zipcode" name="user_zipcode" placeholder="required" required >
-                <!-- </div> -->
+            <input type="text" id="zipcode" name="user_zipcode" placeholder="required" required >
             </div>
+
          </fieldset>
          <div class="border-bot"></div>
          <fieldset class="bot-field">
@@ -113,7 +111,8 @@
 
              <textarea class="textarea" id="other-topics" name="user-topics"  rows="10" placeholder="Other topics..." required></textarea>
 
-             <button class="submit-btn">Sign Up</button>
+             <input id="submit-btn" type="submit" value="Sign Up">
+             
 
              <p class="copyright">&copy;Copyright The Code Review</p>
 
