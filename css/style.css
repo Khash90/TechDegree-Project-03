@@ -214,6 +214,7 @@ select {
     border-width: 1px 1px 3px;
     margin-bottom: 10px;
   }
+  
   .copyright{
       text-align: center;
       padding-top: 10px;
@@ -241,51 +242,33 @@ select {
      .header-box{
          max-width: 55%;
      }
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    select{
-    background: rgba(255,255,255,0.1);
-    border: none;
-    font-size: 20px;
-    height: 4rem;
-    margin-right: 0;
-    width: 65%;
-    background-color: #042024;
-    color: #dbe3ef;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin-bottom: 30px;
-    border-radius: 5px;
-}
 
-
-    form .top-field{
-        display: flex;
-        justify-content: space-between;
-        flex-flow: column wrap;
-    }
-    form div{
+    /* form label{
+        width:150px;
+    }  */
+     
+      .top-field label{
+          display: inline-block;
+      }
+      .top-field div {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content:space-between ;
-        
+        justify-content: space-between;
     }
-    form div{
-        max-width: 100%;
+
+    .top-field input , .top-field select{
+        width: 70%;
     }
-   
-    #zipcode{
-        width: 25%;
-        margin-right:40%;
+      #zipcode {
+        flex-basis: 25%;
+        margin-right: 45%; 
+    }
+    #submit-btn:hover{
+        background-color: #8896a8;
+        transition: all 0.5s ease 0s;
     }
      
-  input:focus{
-    background:  rgb(117, 117, 167);
-    border: 3px solid #1d0c2a;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    transition: all 0.5s ease 0s;
-  }
+}
+      
+
  
- }
