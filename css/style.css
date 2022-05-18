@@ -244,7 +244,8 @@ select {
      }
 
     form label{
-        flex-basis:20%;
+        flex-basis:24%;
+        
     } 
      
       .top-field label{
@@ -262,7 +263,7 @@ select {
     }
       #zipcode {
         flex-basis: 25%;
-        margin-right: 62%; 
+        margin-right: 60%; 
     }
     #submit-btn:hover{
         background-color: #8896a8;
