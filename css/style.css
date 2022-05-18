@@ -251,10 +251,10 @@ select {
     margin-bottom: 30px;
     border-radius: 5px;
 }
-.zipcode{
+/* .zipcode{
     max-width: 35%;
     padding-left: 30px;
-}
+} */
 
     form .top-field{
         display: flex;
@@ -271,12 +271,16 @@ select {
     form div{
         max-width: 100%;
     }
-    .zipcode-container{
+    /* .zipcode-container{
         width: 65%;
-    }
+    } */
     /* .label-container{
         width: 20%;
     } */
+    #zipcode{
+        width: 25%;
+        margin-right:40%;
+    }
      
   input:focus{
     background:  rgb(117, 117, 167);
