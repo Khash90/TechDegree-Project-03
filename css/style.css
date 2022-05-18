@@ -243,9 +243,9 @@ select {
          max-width: 55%;
      }
 
-    /* form label{
-        width:150px;
-    }  */
+    form label{
+        flex-basis:20%;
+    } 
      
       .top-field label{
           display: inline-block;
@@ -257,11 +257,12 @@ select {
     }
 
     .top-field input , .top-field select{
-        width: 70%;
+        /* width: 70%; */
+        align-self: flex-start;
     }
       #zipcode {
         flex-basis: 25%;
-        margin-right: 45%; 
+        margin-right: 62%; 
     }
     #submit-btn:hover{
         background-color: #8896a8;
